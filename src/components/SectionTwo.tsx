@@ -22,20 +22,19 @@ export default function SectionTwo() {
     }, [controls]);
 
     const imageDataLeft = [
-        { height: "360px", delay: 0, x: -200, y: -200 },
-        { height: "300px", delay: 0.2, x: -200, y: 200 },
+        { height: "360px", delay: 0, x: -200, y: -200, backgroundPos: "top left" },
+        { height: "300px", delay: 0.2, x: -200, y: 200, backgroundPos: "bottom left" },
     ];
 
     const imageDataRight = [
-        { height: "240px", delay: 0.4, x: 200, y: -200 },
-        { height: "360px", delay: 0.6, x: 200, y: 200 },
+        { height: "240px", delay: 0.4, x: 200, y: -200, backgroundPos: "top right" },
+        { height: "360px", delay: 0.6, x: 200, y: 200, backgroundPos: "bottom right" },
     ];
 
     return (
         <section ref={ref} className="py-[100px] px-6 lg:px-[91px] grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="col-span-1">
                 <div className="grid grid-cols-2 gap-2 items-center">
-
                     <div className="col-span-1 flex flex-col gap-2">
                         {imageDataLeft.map((item, index) => (
                             <motion.div
@@ -44,6 +43,7 @@ export default function SectionTwo() {
                                 style={{
                                     height: item.height,
                                     backgroundImage: `url(${ImageSectionTwo})`,
+                                    backgroundPosition: item.backgroundPos,
                                 }}
                                 initial={{ opacity: 0, x: item.x, y: item.y, scale: 0.6 }}
                                 animate={isVisible ? { opacity: 1, x: 0, y: 0, scale: 1 } : {}}
@@ -60,6 +60,7 @@ export default function SectionTwo() {
                                 style={{
                                     height: item.height,
                                     backgroundImage: `url(${ImageSectionTwo})`,
+                                    backgroundPosition: item.backgroundPos,
                                 }}
                                 initial={{ opacity: 0, x: item.x, y: item.y, scale: 0.6 }}
                                 animate={isVisible ? { opacity: 1, x: 0, y: 0, scale: 1 } : {}}
