@@ -5,9 +5,9 @@ import BackgroundSectionSixOne from "../assets/images/section_six_background.jpe
 export default function SectionSix() {
     return (
         <section className="py-[100px] px-6 overflow-x-auto">
-            <div className="max-w-[554px] w-full flex flex-col gap-5 text-center mx-auto mb-20">
+            <div className="max-w-[554px] w-full flex flex-col gap-5 text-center mx-auto mb-10 lg:mb-20">
                 <motion.h2
-                    className="text-display-lg-medium text-neutral-900"
+                    className="md:text-display-md-medium lg:text-display-lg-medium text-display-sm-medium text-neutral-900"
                     initial={{ opacity: 0, y: 40 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
@@ -16,7 +16,7 @@ export default function SectionSix() {
                     Explore the Heart of Nature
                 </motion.h2>
                 <motion.p
-                    className="text-body-md-medium text-neutral-600"
+                    className="md:text-body-md-medium lg:text-body-lg-medium text-body-sm-medium text-neutral-600"
                     initial={{ opacity: 0, y: 40 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
@@ -43,7 +43,7 @@ export default function SectionSix() {
                 ].map((item, index) => (
                     <motion.div
                         key={index}
-                        className="col-span-4"
+                        className="col-span-8 md:col-span-4"
                         initial={{ opacity: 0, x: 50 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8, delay: item.delay }}
@@ -61,8 +61,8 @@ export default function SectionSix() {
                                 />
                             </CardBody>
                             <CardFooter className="flex flex-col items-start gap-2 p-0">
-                                <h5 className="text-display-sm-medium text-neutral-900">{item.title}</h5>
-                                <p className="text-body-lg-medium text-neutral-600 line-clamp-2">
+                                <h5 className="text-body-lg-medium md:text-display-xs-medium lg:text-display-sm-medium text-neutral-900">{item.title}</h5>
+                                <p className="text-body-sm-medium md:text-body-md-medium lg:text-body-lg-medium text-neutral-600 line-clamp-2">
                                     {item.desc}
                                 </p>
                             </CardFooter>

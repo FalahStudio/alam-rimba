@@ -8,9 +8,9 @@ import SectionFourImageFour from "../assets/images/section_four_image_four.jpeg"
 export default function SectionFour() {
     return (
         <section className="py-[100px] px-6">
-            <div className="grid grid-cols-2 gap-20 pb-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10 lg:gap-20 pb-10">
                 <motion.h1
-                    className="text-display-lg-medium w-2/3 text-neutral-900"
+                    className="md:text-display-md-medium lg:text-display-lg-medium text-display-sm-medium w-full md:w-2/3 text-neutral-900"
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, ease: "easeOut" }}
@@ -19,7 +19,7 @@ export default function SectionFour() {
                     Explore the Untamed Beauty of Nature
                 </motion.h1>
                 <motion.p
-                    className="text-body-lg-medium text-neutral-600"
+                    className="md:text-body-md-medium lg:text-body-lg-medium text-body-sm-medium text-neutral-600"
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
@@ -29,31 +29,31 @@ export default function SectionFour() {
                 </motion.p>
             </div>
 
-            <div className="grid grid-cols-8 gap-10">
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-4 md:gap-6 lg:gap-10">
                 {[
                     {
-                        colSpan: "col-span-5",
+                        colSpan: "col-span-2 md:col-span-4 lg:col-span-5",
                         src: SectionFourImageOne,
                         label: "Amazon Rainforest, Brazil",
                         delay: 0.3,
                         direction: -30,
                     },
                     {
-                        colSpan: "col-span-3",
+                        colSpan: "col-span-2 md:col-span-2 lg:col-span-3",
                         src: SectionFourImageTwo,
                         label: "Himalayas, Nepal",
                         delay: 0.5,
                         direction: 30,
                     },
                     {
-                        colSpan: "col-span-4",
+                        colSpan: "col-span-2 md:col-span-2 lg:col-span-4",
                         src: SectionFourImageThree,
                         label: "Patagonia, Chile",
                         delay: 0.7,
                         direction: -30,
                     },
                     {
-                        colSpan: "col-span-4",
+                        colSpan: "col-span-2 md:col-span-2 lg:col-span-4",
                         src: SectionFourImageFour,
                         label: "The Philippines' Secret Beaches",
                         delay: 0.9,

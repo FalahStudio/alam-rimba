@@ -10,7 +10,7 @@ import Avatar5 from "../assets/images/avatar/avatar_5.jpeg";
 
 export default function Jumbotron() {
     return (
-        <section className="h-full min-h-[842px] lg:h-screen bg-neutral-200 w-full rounded-xl overflow-hidden mb-4">
+        <section className="h-screen bg-neutral-200 w-full rounded-xl overflow-hidden mb-4">
             <div className="relative w-full h-full">
                 <div className="absolute px-6 py-8 w-full h-full z-10 flex flex-col justify-between">
                     <div className="grid grid-cols-1 md:grid-cols-8">
@@ -94,7 +94,7 @@ export default function Jumbotron() {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 2 }}
-                    className="h-full min-h-[842px] lg:h-screen w-full"
+                    className="h-full min-h-[842px] lg:h-screen w-full relative"
                 >
                     <Image
                         src={backgroud}

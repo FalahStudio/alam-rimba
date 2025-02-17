@@ -49,14 +49,14 @@ export default function SectionFive() {
     };
 
     return (
-        <section className="py-20 px-48 grid grid-cols-4 gap-20 justify-center">
-            <div className="col-span-1">
+        <section className="py-10 px-6 md:px-12 lg:px-48 grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-20 items-center">
+            <div className="flex flex-col items-center md:items-start col-span-1">
                 <motion.div
                     key={reviews[current].id}
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.5 }}
-                    className="flex flex-row items-center gap-5"
+                    className="flex flex-col md:flex-row items-center gap-5"
                 >
                     <div className="w-20 h-20 rounded-full overflow-hidden">
                         <img
@@ -65,15 +65,15 @@ export default function SectionFive() {
                             className="w-full h-full object-cover object-center"
                         />
                     </div>
-                    <div className="flex flex-col gap-3">
-                        <p className="text-body-xl-semibold text-neutral-900">{reviews[current].name}</p>
-                        <p className="text-body-lg-medium text-neutral-600">{reviews[current].role}</p>
+                    <div className="flex flex-col text-center md:text-left gap-2">
+                        <p className="text-lg font-semibold text-neutral-900">{reviews[current].name}</p>
+                        <p className="text-base text-neutral-600">{reviews[current].role}</p>
                     </div>
                 </motion.div>
 
-                <div className="mt-6 flex gap-6">
+                <div className="mt-6 flex gap-4">
                     <Button
-                        className="bg-neutral-white border border-neutral-300 h-11 w-11 flex-none"
+                        className="bg-white border border-neutral-300 h-10 w-10"
                         radius="md"
                         isIconOnly
                         onClick={prevReview}
@@ -81,7 +81,7 @@ export default function SectionFive() {
                         <ArrowLeft2 size={24} color="black" />
                     </Button>
                     <Button
-                        className="bg-neutral-white border border-neutral-300 h-11 w-11 flex-none"
+                        className="bg-white border border-neutral-300 h-10 w-10"
                         radius="md"
                         isIconOnly
                         onClick={nextReview}
@@ -91,7 +91,7 @@ export default function SectionFive() {
                 </div>
             </div>
 
-            <div className="col-span-3">
+            <div className="col-span-1 md:col-span-3 text-center md:text-left">
                 <motion.p
                     key={reviews[current].id}
                     initial={{ opacity: 0, x: 20 }}
@@ -103,5 +103,5 @@ export default function SectionFive() {
                 </motion.p>
             </div>
         </section>
-    )
+    );
 }
