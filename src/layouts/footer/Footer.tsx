@@ -32,7 +32,7 @@ export default function Footer() {
                                 "Alam Rimba Travel Agency",
                                 "Jl. Raya Adventure No. 12, Ubud, Bali, Indonesia",
                             ],
-                            align: "center md:start",
+                            align: "items-center md:items-start",
                         },
                         {
                             title: "Contact Us",
@@ -40,7 +40,7 @@ export default function Footer() {
                                 "Phone: +62 812-3456-7890",
                                 "Email: contact@rimbaalam.com",
                             ],
-                            align: "center",
+                            align: "items-center",
                         },
                         {
                             title: "Opening Hours:",
@@ -48,12 +48,12 @@ export default function Footer() {
                                 "Monday - Friday: 9:00 AM - 6:00 PM",
                                 "Saturday: 10:00 AM - 4:00 PM",
                             ],
-                            align: "center md:end",
+                            align: "items-center md:items-end",
                         },
                     ].map((section, index) => (
                         <motion.div
                             key={index}
-                            className={`col-span-1 flex flex-col items-${section.align} gap-2`}
+                            className={`col-span-1 flex flex-col ${section.align} gap-2`}
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8, delay: 0.3 + index * 0.2 }}
