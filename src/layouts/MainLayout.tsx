@@ -9,7 +9,6 @@ export default function MainLayout() {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
-        // Simulasi menunggu semua data dan gambar selesai dimuat
         const images = document.images;
         let loaded = 0;
         const total = images.length;
@@ -26,7 +25,6 @@ export default function MainLayout() {
             }
         };
 
-        // Cek jika semua gambar sudah ter-load
         Array.from(images).forEach((img) => {
             if (img.complete) {
                 checkImagesLoaded();
