@@ -1,50 +1,17 @@
-# React + TypeScript + Vite
+## Rimba Alam – Explore Nature’s Hidden Wonders
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Step into the wild with Rimba Alam, your gateway to breathtaking nature adventures. From towering mountains to pristine beaches, we offer tailor-made eco-travel experiences that bring you closer to nature. Whether you seek thrilling hikes, serene getaways, or wildlife encounters, Rimba Alam ensures an unforgettable journey.
 
-Currently, two official plugins are available:
+![Alt text](https://cdn.dribbble.com/userupload/23032570/file/original-f61dd703ea91ce17db8808927bd2e6fe.png?resize=752x564&vertical=center)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Mockup Preview
 
-## Expanding the ESLint configuration
+![Alt text](https://cdn.dribbble.com/userupload/23032571/file/original-628b6d6ddc31e00b1ebbae7e58d8e36b.png?resize=752x564&vertical=center)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Full Preview
 
-- Configure the top-level `parserOptions` property like this:
+![Alt text](https://cdn.dribbble.com/userupload/23032572/file/original-e05ef394d7e78c0f16b0583306778bd4.png?resize=752x2987&vertical=center)
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+<div style="text-align: center;">
+  <strong>Got a project, idea, or anything in mind? We’d love to hear from you! Reach us at <br/><a href="mailto:falahstd@gmail.com">falahstd@gmail.com</a></strong>
+</div>
